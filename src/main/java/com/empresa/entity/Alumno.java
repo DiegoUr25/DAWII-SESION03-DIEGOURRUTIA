@@ -24,6 +24,7 @@ public class Alumno {
 	private String nombre;
 	private String dni;
 	private String correo;
+	private String direccion;
 		
 	
 	@JsonFormat(pattern = "yyyy-MM-dd", timezone="America/Lima" )
@@ -61,6 +62,12 @@ public class Alumno {
 	}
 	public void setCorreo(String correo) {
 		this.correo = correo;
+	}
+	public String getDireccion() {
+		return direccion;
+	}
+	public void setDireccion(String direccion) {
+		this.direccion = direccion;
 	}
 
 
